@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/lib/python3.10/site-packages",
+        "/home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/lib/python3.10/site-packages",
+        "/home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

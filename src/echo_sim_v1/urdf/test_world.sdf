@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <world name="default">
+    <!-- Optional sun (commented out to avoid URI issues) -->
+    <!--
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    -->
+
+    <!-- Include your robot -->
+    <include>
+      <name>my_robot</name>
+      <uri>file:///home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1/urdf/my_robot.sdf</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+  </world>
+</sdf>

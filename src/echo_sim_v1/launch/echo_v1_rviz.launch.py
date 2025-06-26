@@ -8,16 +8,16 @@ from launch_ros.parameter_descriptions import ParameterValue
 from launch_ros.substitutions import FindPackageShare
 
 # How to run (where input can be True, False or an absolute path).
-# $ ros2 launch echo_sim_v1 turtlebot_simple_rviz.launch.py <launch-argument>:=<input>
+# $ ros2 launch echo_sim_v1 echo_v1_rviz.launch.py <launch-argument>:=<input>
 #
 # Examples:
-#   $ ros2 launch echo_sim_v1 turtlebot_simple_rviz.launch.py gui:=False
-#   $ ros2 launch echo_sim_v1 turtlebot_simple_rviz.launch.py gui:=True urdf_model:=/home/vboxuser/Desktop/amr_ws/src/echo_sim_v1/urdf/turtlebot3_waffle.urdf
+#   $ ros2 launch echo_sim_v1 echo_v1_rviz.launch.py gui:=False
+#   $ ros2 launch echo_sim_v1 echo_v1_rviz.launch.py gui:=True urdf_model:=/home/vboxuser/Desktop/amr_ws/src/echo_sim_v1/urdf/turtlebot3_waffle.urdf
 
 def generate_launch_description():
     # Define environment variables
     pkg_share = FindPackageShare(package='echo_sim_v1').find('echo_sim_v1')                 # Set the path to this package.
-    default_urdf_model_path = os.path.join(pkg_share, 'urdf/echo_v1.urdf')        # Set the path to the URDF file
+    default_urdf_model_path = os.path.join(pkg_share, 'urdf/echo_v1.urdf.xacro')        # Set the path to the xacro file
     default_rviz_config_path = os.path.join(pkg_share, 'rviz', 'echo_v1_gazebo.rviz')            # Set the path to the RViz configuration settings
 
     # Define launch arguments that can entered into the terminal.
@@ -85,7 +85,7 @@ def generate_launch_description():
             'use_sim_time': use_sim_time,
             'robot_description': ParameterValue(Command(['xacro ', urdf_model]), value_type=str) # Parameters within robot_state_publisher package 
         }],
-        arguments=[default_urdf_model_path]
+        arguments=[default_urdf_model_path] # could potentially remove this line
     )
 
     # Launch RViz

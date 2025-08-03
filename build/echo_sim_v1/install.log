@@ -2,9 +2,11 @@
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/lib/python3.10/site-packages/echo_sim_v1/__pycache__/__init__.cpython-310.pyc
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/ament_index/resource_index/packages/echo_sim_v1
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/package.xml
+/home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/launch/gazebo_ign.launch.py
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/launch/robot_spawn.launch.py
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/launch/gazebo.launch.py
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/launch/echo_v1_rviz.launch.py
+/home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/launch/robot_spawn_ign.launch.py
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/config
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/worlds
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/models

@@ -12,7 +12,9 @@ setup.py
 echo_sim_v1/__init__.py
 launch/echo_v1_rviz.launch.py
 launch/gazebo.launch.py
+launch/gazebo_ign.launch.py
 launch/robot_spawn.launch.py
+launch/robot_spawn_ign.launch.py
 meshes/base_link.STL
 meshes/camera_link.STL
 meshes/caster_wheel_link.STL
@@ -21,9 +23,6 @@ meshes/lidar_link.STL
 meshes/right_wheel_link.STL
 resource/echo_sim_v1
 rviz/echo_v1_gazebo.rviz
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
 urdf/echo_v1.urdf.xacro
 urdf/materials.xacro
 urdf/my_robot.sdf

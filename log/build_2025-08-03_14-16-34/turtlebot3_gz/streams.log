@@ -1,0 +1,21 @@
+[0.736s] Invoking command in '/home/cameron/Project_Echo/Educational/amr_ws/src/turtlebot3_gz': PYTHONPATH=/home/cameron/Project_Echo/Educational/amr_ws/build/turtlebot3_gz/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot3_gz build --build-base /home/cameron/Project_Echo/Educational/amr_ws/build/turtlebot3_gz/build install --record /home/cameron/Project_Echo/Educational/amr_ws/build/turtlebot3_gz/install.log --single-version-externally-managed install_data
+[0.940s] running egg_info
+[0.941s] writing ../../build/turtlebot3_gz/turtlebot3_gz.egg-info/PKG-INFO
+[0.941s] writing dependency_links to ../../build/turtlebot3_gz/turtlebot3_gz.egg-info/dependency_links.txt
+[0.941s] writing entry points to ../../build/turtlebot3_gz/turtlebot3_gz.egg-info/entry_points.txt
+[0.941s] writing requirements to ../../build/turtlebot3_gz/turtlebot3_gz.egg-info/requires.txt
+[0.941s] writing top-level names to ../../build/turtlebot3_gz/turtlebot3_gz.egg-info/top_level.txt
+[0.942s] reading manifest file '../../build/turtlebot3_gz/turtlebot3_gz.egg-info/SOURCES.txt'
+[0.942s] adding license file 'LICENSE'
+[0.943s] writing manifest file '../../build/turtlebot3_gz/turtlebot3_gz.egg-info/SOURCES.txt'
+[0.943s] running build
+[0.943s] running build_py
+[0.943s] running install
+[0.944s] running install_lib
+[0.944s] running install_data
+[0.945s] running install_egg_info
+[0.946s] removing '/home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/lib/python3.10/site-packages/turtlebot3_gz-0.0.0-py3.10.egg-info' (and everything under it)
+[0.946s] Copying ../../build/turtlebot3_gz/turtlebot3_gz.egg-info to /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/lib/python3.10/site-packages/turtlebot3_gz-0.0.0-py3.10.egg-info
+[0.947s] running install_scripts
+[0.964s] writing list of installed files to '/home/cameron/Project_Echo/Educational/amr_ws/build/turtlebot3_gz/install.log'
+[0.984s] Invoked command in '/home/cameron/Project_Echo/Educational/amr_ws/src/turtlebot3_gz' returned '0': PYTHONPATH=/home/cameron/Project_Echo/Educational/amr_ws/build/turtlebot3_gz/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot3_gz build --build-base /home/cameron/Project_Echo/Educational/amr_ws/build/turtlebot3_gz/build install --record /home/cameron/Project_Echo/Educational/amr_ws/build/turtlebot3_gz/install.log --single-version-externally-managed install_data

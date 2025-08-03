@@ -3,6 +3,9 @@
 
 <robot name="echo_v1" xmlns:xacro="http://ros.org/wiki/xacro">
 
+  <!-- Include mesh directory env variable -->
+  <xacro:property name="mesh_dir" value="$(env HOME)/Project_Echo/Educational/amr_ws/src/echo_sim_v1/meshes"/>
+
   <!-- Include materials xacro -->
   <xacro:include filename="$(find echo_sim_v1)/urdf/materials.xacro"/>
 
@@ -26,7 +29,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://echo_sim_v1/meshes/base_link.STL"/>
+        <mesh filename="${mesh_dir}/base_link.STL"/>
       </geometry>
       <material name="red"/>
     </visual>
@@ -41,7 +44,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://echo_sim_v1/meshes/base_link.STL"/>
+        <mesh filename="${mesh_dir}/base_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -57,14 +60,14 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://echo_sim_v1/meshes/left_wheel_link.STL"/>
+        <mesh filename="${mesh_dir}/left_wheel_link.STL"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://echo_sim_v1/meshes/left_wheel_link.STL"/>
+        <mesh filename="${mesh_dir}/left_wheel_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -87,14 +90,14 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://echo_sim_v1/meshes/right_wheel_link.STL"/>
+        <mesh filename="${mesh_dir}/right_wheel_link.STL"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://echo_sim_v1/meshes/right_wheel_link.STL"/>
+        <mesh filename="${mesh_dir}/right_wheel_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -117,14 +120,14 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://echo_sim_v1/meshes/caster_wheel_link.STL"/>
+        <mesh filename="${mesh_dir}/caster_wheel_link.STL"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://echo_sim_v1/meshes/caster_wheel_link.STL"/>
+        <mesh filename="${mesh_dir}/caster_wheel_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -147,14 +150,14 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://echo_sim_v1/meshes/lidar_link.STL"/>
+        <mesh filename="${mesh_dir}/lidar_link.STL"/>
       </geometry>
       <material name="dark_grey"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://echo_sim_v1/meshes/lidar_link.STL"/>
+        <mesh filename="${mesh_dir}/lidar_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -177,14 +180,14 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://echo_sim_v1/meshes/camera_link.STL"/>
+        <mesh filename="${mesh_dir}/camera_link.STL"/>
       </geometry>
       <material name="dark_grey"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://echo_sim_v1/meshes/camera_link.STL"/>
+        <mesh filename="${mesh_dir}/camera_link.STL"/>
       </geometry>
     </collision>
   </link>

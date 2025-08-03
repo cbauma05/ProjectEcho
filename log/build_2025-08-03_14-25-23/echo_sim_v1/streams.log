@@ -1,0 +1,22 @@
+[0.760s] Invoking command in '/home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1': PYTHONPATH=/home/cameron/Project_Echo/Educational/amr_ws/build/echo_sim_v1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/echo_sim_v1 build --build-base /home/cameron/Project_Echo/Educational/amr_ws/build/echo_sim_v1/build install --record /home/cameron/Project_Echo/Educational/amr_ws/build/echo_sim_v1/install.log --single-version-externally-managed install_data
+[0.960s] running egg_info
+[0.961s] writing ../../build/echo_sim_v1/echo_sim_v1.egg-info/PKG-INFO
+[0.961s] writing dependency_links to ../../build/echo_sim_v1/echo_sim_v1.egg-info/dependency_links.txt
+[0.961s] writing entry points to ../../build/echo_sim_v1/echo_sim_v1.egg-info/entry_points.txt
+[0.961s] writing requirements to ../../build/echo_sim_v1/echo_sim_v1.egg-info/requires.txt
+[0.961s] writing top-level names to ../../build/echo_sim_v1/echo_sim_v1.egg-info/top_level.txt
+[0.963s] reading manifest file '../../build/echo_sim_v1/echo_sim_v1.egg-info/SOURCES.txt'
+[0.963s] adding license file 'LICENSE'
+[0.963s] writing manifest file '../../build/echo_sim_v1/echo_sim_v1.egg-info/SOURCES.txt'
+[0.963s] running build
+[0.963s] running build_py
+[0.964s] running install
+[0.964s] running install_lib
+[0.965s] running install_data
+[0.965s] copying launch/gazebo_ign.launch.py -> /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/launch
+[0.965s] running install_egg_info
+[0.967s] removing '/home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/lib/python3.10/site-packages/echo_sim_v1-0.0.0-py3.10.egg-info' (and everything under it)
+[0.967s] Copying ../../build/echo_sim_v1/echo_sim_v1.egg-info to /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/lib/python3.10/site-packages/echo_sim_v1-0.0.0-py3.10.egg-info
+[0.968s] running install_scripts
+[0.984s] writing list of installed files to '/home/cameron/Project_Echo/Educational/amr_ws/build/echo_sim_v1/install.log'
+[1.013s] Invoked command in '/home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1' returned '0': PYTHONPATH=/home/cameron/Project_Echo/Educational/amr_ws/build/echo_sim_v1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/echo_sim_v1 build --build-base /home/cameron/Project_Echo/Educational/amr_ws/build/echo_sim_v1/build install --record /home/cameron/Project_Echo/Educational/amr_ws/build/echo_sim_v1/install.log --single-version-externally-managed install_data

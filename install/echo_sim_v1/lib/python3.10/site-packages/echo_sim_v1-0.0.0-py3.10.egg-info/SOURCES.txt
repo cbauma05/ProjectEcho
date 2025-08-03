@@ -12,6 +12,7 @@ setup.py
 config/diff_drive_controller.yaml
 echo_sim_v1/__init__.py
 launch/echo_v1_rviz.launch.py
+launch/echo_v1_world.launch.py
 launch/gazebo.launch.py
 launch/gazebo_ign.launch.py
 launch/robot_spawn.launch.py
@@ -25,9 +26,9 @@ meshes/right_wheel_link.STL
 resource/echo_sim_v1
 rviz/echo_v1_gazebo.rviz
 urdf/echo_v1.urdf.xacro
+urdf/echo_v1_world.sdf
 urdf/materials.xacro
-urdf/my_robot.sdf
 urdf/my_robot.urdf
-urdf/my_robot2.sdf
 urdf/test_world.sdf
+worlds/echo_v1.sdf
 worlds/empty.sdf

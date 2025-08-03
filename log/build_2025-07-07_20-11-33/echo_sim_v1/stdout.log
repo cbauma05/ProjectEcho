@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/echo_sim_v1/echo_sim_v1.egg-info/PKG-INFO
+writing dependency_links to ../../build/echo_sim_v1/echo_sim_v1.egg-info/dependency_links.txt
+writing entry points to ../../build/echo_sim_v1/echo_sim_v1.egg-info/entry_points.txt
+writing requirements to ../../build/echo_sim_v1/echo_sim_v1.egg-info/requires.txt
+writing top-level names to ../../build/echo_sim_v1/echo_sim_v1.egg-info/top_level.txt
+reading manifest file '../../build/echo_sim_v1/echo_sim_v1.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/echo_sim_v1/echo_sim_v1.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying urdf/my_robot.urdf -> /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/urdf
+copying urdf/test_world.sdf -> /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/urdf
+copying urdf/my_robot.sdf -> /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/urdf
+copying urdf/building_robot.sdf -> /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/urdf
+running install_egg_info
+removing '/home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/lib/python3.10/site-packages/echo_sim_v1-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/echo_sim_v1/echo_sim_v1.egg-info to /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/lib/python3.10/site-packages/echo_sim_v1-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/cameron/Project_Echo/Educational/amr_ws/build/echo_sim_v1/install.log'

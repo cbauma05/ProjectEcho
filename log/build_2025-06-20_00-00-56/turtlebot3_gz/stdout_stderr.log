@@ -1,0 +1,49 @@
+running egg_info
+creating ../../build/turtlebot3_gz/turtlebot3_gz.egg-info
+writing ../../build/turtlebot3_gz/turtlebot3_gz.egg-info/PKG-INFO
+writing dependency_links to ../../build/turtlebot3_gz/turtlebot3_gz.egg-info/dependency_links.txt
+writing entry points to ../../build/turtlebot3_gz/turtlebot3_gz.egg-info/entry_points.txt
+writing requirements to ../../build/turtlebot3_gz/turtlebot3_gz.egg-info/requires.txt
+writing top-level names to ../../build/turtlebot3_gz/turtlebot3_gz.egg-info/top_level.txt
+writing manifest file '../../build/turtlebot3_gz/turtlebot3_gz.egg-info/SOURCES.txt'
+reading manifest file '../../build/turtlebot3_gz/turtlebot3_gz.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/turtlebot3_gz/turtlebot3_gz.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/cameron/Project_Echo/Educational/amr_ws/build/turtlebot3_gz/build
+creating /home/cameron/Project_Echo/Educational/amr_ws/build/turtlebot3_gz/build/lib
+creating /home/cameron/Project_Echo/Educational/amr_ws/build/turtlebot3_gz/build/lib/turtlebot3_gz
+copying turtlebot3_gz/__init__.py -> /home/cameron/Project_Echo/Educational/amr_ws/build/turtlebot3_gz/build/lib/turtlebot3_gz
+running install
+running install_lib
+creating /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/lib/python3.10/site-packages/turtlebot3_gz
+copying /home/cameron/Project_Echo/Educational/amr_ws/build/turtlebot3_gz/build/lib/turtlebot3_gz/__init__.py -> /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/lib/python3.10/site-packages/turtlebot3_gz
+byte-compiling /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/lib/python3.10/site-packages/turtlebot3_gz/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/ament_index
+creating /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/ament_index/resource_index
+creating /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/ament_index/resource_index/packages
+copying resource/turtlebot3_gz -> /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/ament_index/resource_index/packages
+copying package.xml -> /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/turtlebot3_gz
+creating /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/turtlebot3_gz/launch
+copying launch/turtlebot_simple_rviz.launch.py -> /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/turtlebot3_gz/launch
+creating /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/turtlebot3_gz/config
+creating /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/turtlebot3_gz/worlds
+creating /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/turtlebot3_gz/models
+creating /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/turtlebot3_gz/rviz
+copying rviz/tb3_gazebo.rviz -> /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/turtlebot3_gz/rviz
+creating /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/turtlebot3_gz/urdf
+copying urdf/turtlebot3_waffle.urdf -> /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/turtlebot3_gz/urdf
+copying urdf/turtlebot_simple.urdf -> /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/turtlebot3_gz/urdf
+creating /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/turtlebot3_gz/meshes
+copying meshes/waffle_pi_base.dae -> /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/turtlebot3_gz/meshes
+copying meshes/lds.dae -> /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/turtlebot3_gz/meshes
+copying meshes/burger_base.dae -> /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/turtlebot3_gz/meshes
+copying meshes/r200.dae -> /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/turtlebot3_gz/meshes
+copying meshes/tire.dae -> /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/turtlebot3_gz/meshes
+copying meshes/waffle_base.dae -> /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/share/turtlebot3_gz/meshes
+running install_egg_info
+Copying ../../build/turtlebot3_gz/turtlebot3_gz.egg-info to /home/cameron/Project_Echo/Educational/amr_ws/install/turtlebot3_gz/lib/python3.10/site-packages/turtlebot3_gz-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/cameron/Project_Echo/Educational/amr_ws/build/turtlebot3_gz/install.log'

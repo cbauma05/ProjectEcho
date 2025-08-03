@@ -227,3 +227,18 @@ Window Geometry:
   Width: 1200
   X: 246
   Y: 77
+
+- Class: rviz_default_plugins/Odometry
+  Enabled: true
+  Name: Odometry
+  Topic:
+    Value: /odom
+  Color: 255; 25; 0
+  Keep: 100
+  Shaft Length: 0.1
+  Shaft Radius: 0.02
+  Head Length: 0.1
+  Head Radius: 0.03
+  Position Tolerance: 0.1
+  Angle Tolerance: 0.1
+  Covariance Display: None

@@ -18,6 +18,11 @@
             name="ignition::gazebo::systems::SceneBroadcaster">
         </plugin>
 
+        <plugin 
+            filename="libignition-gazebo-keyboard-control-system.so" 
+            name="ignition::gazebo::systems::KeyboardControl">
+        </plugin>
+
         <light type="directional" name="sun">
             <cast_shadows>true</cast_shadows>
             <pose>0 0 10 0 0 0</pose>
@@ -58,8 +63,18 @@
             </link>
         </model>
 
-        <model name='vehicle_blue' canonical_link='chassis'>
+        <model name='echo_v1' canonical_link='chassis'>
+
+            <plugin name="odometry_publisher" filename="libignition-gazebo-odometry-system.so">
+            <odom_publish_topic>/model/echo_v1/odometry</odom_publish_topic>
+            <odom_frame_id>odom</odom_frame_id>
+            <child_frame_id>base_link</child_frame_id>
+            </plugin>
+
+
             <pose relative_to='world'>0 0 0 0 0 0</pose>   <!--the pose is relative to the world by default-->
+
+            <frame name="base_link" attached_to="chassis"/>
 
             <link name='chassis'>
                 <pose relative_to='__model__'>0.5 0 0.4 0 0 0</pose>

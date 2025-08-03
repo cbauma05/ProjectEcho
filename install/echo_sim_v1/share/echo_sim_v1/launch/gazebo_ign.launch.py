@@ -1,35 +1,32 @@
+
+
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription
-from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import PathJoinSubstitution
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.substitutions import FindPackageShare
+from launch.actions import ExecuteProcess
 
 def generate_launch_description():
-    gz_sim_pkg = FindPackageShare('ros_gz_sim')
+    gz_sim_pkg = FindPackageShare('echo_sim_v1')
+
     world_path = PathJoinSubstitution([
-        FindPackageShare('echo_sim_v1'),
+        gz_sim_pkg,
         'worlds',
-        'empty.sdf'  # make sure you have an SDF world
+        'empty.sdf'  # must be an sdf file
     ])
 
     return LaunchDescription([
         # Start Ignition Gazebo
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(
-                PathJoinSubstitution([gz_sim_pkg, 'launch', 'gz_sim.launch.py'])
-            ),
-            #launch_arguments={'gz_args': ['-r', world_path]}.items() #original
-            launch_arguments={'gz_args': f'-r {world_path}'}.items()
+        ExecuteProcess(
+            cmd=['ign', 'gazebo', '-r', world_path, '--force-version', '6'],
+            output='screen'
         ),
 
         # Include robot spawn launch
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
-                PathJoinSubstitution([
-                    FindPackageShare('echo_sim_v1'),
-                    'launch',
-                    'robot_spawn_ign.launch.py'
-                ])
+                PathJoinSubstitution([gz_sim_pkg, 'launch', 'robot_spawn_ign.launch.py'])
             )
         )
     ])

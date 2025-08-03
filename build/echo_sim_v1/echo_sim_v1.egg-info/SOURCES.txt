@@ -29,3 +29,4 @@ urdf/my_robot.sdf
 urdf/my_robot.urdf
 urdf/my_robot2.sdf
 urdf/test_world.sdf
+worlds/empty.sdf

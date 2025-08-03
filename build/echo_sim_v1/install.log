@@ -8,7 +8,7 @@
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/launch/echo_v1_rviz.launch.py
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/launch/robot_spawn_ign.launch.py
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/config
-/home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/worlds
+/home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/worlds/empty.sdf
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/models
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/rviz/echo_v1_gazebo.rviz
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/urdf/my_robot.urdf

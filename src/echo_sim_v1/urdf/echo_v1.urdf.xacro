@@ -9,6 +9,22 @@
   <!-- Include materials xacro -->
   <xacro:include filename="$(find echo_sim_v1)/urdf/materials.xacro"/>
 
+  <!-- Diff Drive Plugin for Gazebo -->
+  <gazebo>
+    <plugin name="diff_drive_controller" filename="libgazebo_ros_diff_drive.so">
+      <ros>
+        <namespace>/</namespace>
+      </ros>
+      <command_topic>/cmd_vel</command_topic>
+      <left_wheel>left_wheel_joint</left_wheel>
+      <right_wheel>right_wheel_joint</right_wheel>
+      <wheel_separation>0.14</wheel_separation>
+      <wheel_radius>0.03</wheel_radius>
+      <publish_wheel_tf>true</publish_wheel_tf>
+    </plugin>
+  </gazebo>
+
+
   <!-- Base Footprint -->
   <link name="base_footprint"/>
 

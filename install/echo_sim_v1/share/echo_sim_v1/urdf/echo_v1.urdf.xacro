@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
 <robot name="echo_v1" xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <!-- Include mesh directory env variable -->
-  <xacro:property name="mesh_dir" value="$(env HOME)/Project_Echo/Educational/amr_ws/src/echo_sim_v1/meshes"/>
-
   <!-- Include materials xacro -->
-  <xacro:include filename="$(find echo_sim_v1)/urdf/materials.xacro"/>
+  <xacro:include filename="/home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1/urdf/materials.xacro"/>
 
-  <!-- ROS2 Control Plugin -->
+  <!-- ROS2 Control Plugin
   <ros2_control name="EchoHardware" type="system">
     <hardware>
       <plugin>gazebo_ros2_control/GazeboSystem</plugin>
@@ -24,10 +20,10 @@
       <state_interface name="velocity"/>
       <state_interface name="position"/>
     </joint>
-  </ros2_control>
+  </ros2_control> -->
 
   <!-- Transmission Definition -->
-  <transmission name="left_wheel_trans">
+  <!-- <transmission name="left_wheel_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <actuator name="left_wheel_motor">
       <mechanicalReduction>1</mechanicalReduction>
@@ -41,9 +37,7 @@
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
     <joint name="right_wheel_joint"/>
-  </transmission>
-
-
+  </transmission> -->
 
   <!-- Base Footprint -->
   <link name="base_footprint"/>
@@ -65,26 +59,18 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="${mesh_dir}/base_link.STL"/>
+        <mesh filename="file:///home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1/meshes/base_link.STL"/>
       </geometry>
       <material name="red"/>
     </visual>
-    <!-- <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <geometry>
-       <box size="0.3 0.3 0.1"/>
-      </geometry>
-      <material name="Red"/>
-    </visual> -->
-
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="${mesh_dir}/base_link.STL"/>
+        <mesh filename="file:///home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1/meshes/base_link.STL"/>
       </geometry>
     </collision>
   </link>
-
+W
   <!-- Left Wheel -->
   <link name="left_wheel_link">
     <inertial>
@@ -96,14 +82,14 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="${mesh_dir}/left_wheel_link.STL"/>
+        <mesh filename="file:///home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1/meshes/left_wheel_link.STL"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="${mesh_dir}/left_wheel_link.STL"/>
+        <mesh filename="file:///home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1/meshes/left_wheel_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -126,14 +112,14 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="${mesh_dir}/right_wheel_link.STL"/>
+        <mesh filename="file:///home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1/meshes/right_wheel_link.STL"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="${mesh_dir}/right_wheel_link.STL"/>
+        <mesh filename="file:///home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1/meshes/right_wheel_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -156,14 +142,14 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="${mesh_dir}/caster_wheel_link.STL"/>
+        <mesh filename="file:///home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1/meshes/caster_wheel_link.STL"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="${mesh_dir}/caster_wheel_link.STL"/>
+        <mesh filename="file:///home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1/meshes/caster_wheel_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -186,14 +172,14 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="${mesh_dir}/lidar_link.STL"/>
+        <mesh filename="file:///home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1/meshes/lidar_link.STL"/>
       </geometry>
       <material name="dark_grey"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="${mesh_dir}/lidar_link.STL"/>
+        <mesh filename="file:///home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1/meshes/lidar_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -216,14 +202,14 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="${mesh_dir}/camera_link.STL"/>
+        <mesh filename="file:///home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1/meshes/camera_link.STL"/>
       </geometry>
       <material name="dark_grey"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="${mesh_dir}/camera_link.STL"/>
+        <mesh filename="file:///home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1/meshes/camera_link.STL"/>
       </geometry>
     </collision>
   </link>

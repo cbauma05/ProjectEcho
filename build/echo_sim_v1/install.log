@@ -13,9 +13,12 @@
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/worlds/echo_v1.sdf
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/models
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/rviz/echo_v1_gazebo.rviz
+/home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/rviz/echo.rviz
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/urdf/my_robot.urdf
+/home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/urdf/gazebo_control.xacro
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/urdf/echo_v1.urdf.xacro
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/urdf/echo_v1_world.sdf
+/home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/urdf/lidar.xacro
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/urdf/test_world.sdf
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/urdf/materials.xacro
 /home/cameron/Project_Echo/Educational/amr_ws/install/echo_sim_v1/share/echo_sim_v1/meshes/left_wheel_link.STL

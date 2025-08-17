@@ -24,9 +24,12 @@ meshes/left_wheel_link.STL
 meshes/lidar_link.STL
 meshes/right_wheel_link.STL
 resource/echo_sim_v1
+rviz/echo.rviz
 rviz/echo_v1_gazebo.rviz
 urdf/echo_v1.urdf.xacro
 urdf/echo_v1_world.sdf
+urdf/gazebo_control.xacro
+urdf/lidar.xacro
 urdf/materials.xacro
 urdf/my_robot.urdf
 urdf/test_world.sdf

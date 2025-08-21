@@ -26,6 +26,7 @@ meshes/right_wheel_link.STL
 resource/echo_sim_v1
 rviz/echo.rviz
 rviz/echo_v1_gazebo.rviz
+urdf/camera.xacro
 urdf/echo_v1.urdf.xacro
 urdf/echo_v1_world.sdf
 urdf/gazebo_control.xacro

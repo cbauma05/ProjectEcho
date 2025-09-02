@@ -11,6 +11,7 @@ setup.py
 ../../build/echo_sim_v1/echo_sim_v1.egg-info/zip-safe
 config/diff_drive_controller.yaml
 config/mapper_params_online_async.yaml
+config/twist_mux.yaml
 echo_sim_v1/__init__.py
 launch/echo_v1_rviz.launch.py
 launch/echo_v1_world.launch.py

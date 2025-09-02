@@ -1,41 +1,36 @@
-# ProjectEcho
-Collection of ROS2 and Gazebo packages that will be used for an AMR simulation.
-<<<<<<< HEAD
-=======
+Echo Robot Simulation
+
+Echo Robot is a ROS 2-based robotics simulation project featuring a fully 3D-modeled robot integrated with Gazebo and RViz. The robot is equipped with a LiDAR scanner, enabling mapping with SLAM Toolbox and autonomous navigation using Nav2. The project showcases a complete simulation workflow, including teleoperation, SLAM-based mapping, and goal-directed navigation.
 
 
+Example visualization in RViz
 
-LAUNCH FILES
--> echo_v1_rviz.launch.py
-    This launches the echo robot model in rviz with options to enable the jointstate publisher gui and other parameters
+Features
 
--> echo_v1_world.launch.py
-    This launches a simpler robot model in gazebo ignition with gazebo keystroke plugins enables mapped to arrow keys to move the robot.
-    It also launches Rviz to visualize sensor data like point clouds from LIDAR
+✅ 3D robot model visualized in RViz and Gazebo Classic
 
--> gazebo_ign.launch.py 
-    This launches the echo robot model in gazebo ignition.
-    It calls the robot_spawn_ign.launch.py file to launch the robot with robot description in an empty world.
+✅ LiDAR integration for environmental sensing
 
--> gazebo.launch.py
-    This launches the echo robot model in gazbeo classic.
-    It calls the robot_spawn.launch.py file to launch the robot with robot description in an empty world.
+✅ SLAM Toolbox for real-time map building
 
+✅ Nav2 for autonomous goal-based navigation
 
+✅ Teleoperation via teleop_twist_keyboard
 
-To Launch robot in gazebo with custom world, rviz2, and teleop control run:
-ros2 launch echo_sim_v1 gazebo.launch.py   world:=/home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1/worlds/obstacles_1.world
+✅ Configurable launch system for simulation and RViz
 
-In a seperate terminal run (for mapping):
-ros2 launch slam_toolbox online_async_launch.py params_file:=./src/echo_sim_v1/config/mapper_params_online_async.yaml use_sim_time:=true
+Dependencies
 
-In another terminal run (for nav2):
-ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true
+ROS 2 Humble
 
-Important xacros are:
+gazebo_ros
 
-- echo_v1.urdf.xacro
-- gazebo_control
-- materials
-- lidar
->>>>>>> 1b062ec (lots of changes)
+nav2_bringup
+
+slam_toolbox
+
+teleop_twist_keyboard
+
+Make sure you have ROS 2 Humble installed and sourced before running the simulation.
+
+Repository Structure

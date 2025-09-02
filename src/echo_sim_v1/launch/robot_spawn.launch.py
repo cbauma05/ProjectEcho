@@ -27,6 +27,7 @@ def generate_launch_description():
                 '-topic', 'robot_description',
                 '-entity', 'echo_v1'
             ],
-            output='screen'
+            output='screen',
+            parameters=[{'use_sim_time': True}]
         )
     ])

@@ -51,7 +51,8 @@ def generate_launch_description():
         executable='rviz2',
         name='rviz2',
         arguments=['-d', LaunchConfiguration('rviz_config')],
-        output='screen'
+        output='screen',
+        parameters=[{'use_sim_time': True}]
     )
 
     # Keyboard teleop in a separate terminal (requires xterm)

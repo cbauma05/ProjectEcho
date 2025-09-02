@@ -103,18 +103,20 @@
   <joint name="left_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="left_wheel"/>
-    <origin xyz="-0.07 0.175 0" rpy="-${pi/2} 0 0"/>
-    <axis xyz="0 0 1"/>
+    <origin xyz="-0.07 0.175 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
   </joint>
 
   <link name="left_wheel">
     <visual>
+      <origin xyz="0 0 0" rpy="${pi/2} 0 0"/> 
       <geometry>
         <cylinder radius="0.05" length="0.04"/>
       </geometry>
       <material name="dark_grey"/>
     </visual>
     <collision>
+      <origin xyz="0 0 0" rpy="${pi/2} 0 0"/> 
       <geometry>
         <cylinder radius="0.05" length="0.04"/>
       </geometry>
@@ -132,18 +134,20 @@
   <joint name="right_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="right_wheel"/>
-    <origin xyz="-0.07 -0.175 0" rpy="${pi/2} 0 0"/>
-    <axis xyz="0 0 1"/> <!-- made consistent -->
+    <origin xyz="-0.07 -0.175 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/> 
   </joint>
 
   <link name="right_wheel">
     <visual>
+      <origin xyz="0 0 0" rpy="${pi/2} 0 0"/> 
       <geometry>
         <cylinder radius="0.05" length="0.04"/>
       </geometry>
       <material name="dark_grey"/>
     </visual>
     <collision>
+      <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
       <geometry>
         <cylinder radius="0.05" length="0.04"/>
       </geometry>

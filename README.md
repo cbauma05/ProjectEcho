@@ -26,8 +26,11 @@ LAUNCH FILES
 To Launch robot in gazebo with custom world, rviz2, and teleop control run:
 ros2 launch echo_sim_v1 gazebo.launch.py   world:=/home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1/worlds/obstacles_1.world
 
-In a seperate terminal run:
+In a seperate terminal run (for mapping):
 ros2 launch slam_toolbox online_async_launch.py params_file:=./src/echo_sim_v1/config/mapper_params_online_async.yaml use_sim_time:=true
+
+In another terminal run (for nav2):
+ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true
 
 Important xacros are:
 

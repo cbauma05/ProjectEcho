@@ -67,20 +67,42 @@ colcon build
 source install/setup.bash
 ```
 #### 3. Launch Simulation
-Note: Although there are several launch files in the launch directory (for initial testing purposes), the one that will be used is "gazebo.launch.py" which inherently calls "robot_spawn.launch.py"
+Although there are several launch files in the launch directory (for initial testing purposes), the one that will be used is "gazebo.launch.py" which inherently calls "robot_spawn.launch.py"
+
 The command below starts gazebo, spawns the robot in the world specified, opens Rviz with the saved config settings for laserscan messages and map saving, and launches teleop control:
 ```plaintext
 ros2 launch echo_sim_v1 gazebo.launch.py   world:=/home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1/worlds/obstacles_1.world use_sim_time:=true
 ```
+#### 4. Launch SLAM
 In a new terminal window, source the terminal and run the following command. This will launch the slam_toolbox and enable mapping of the world with the Lidar sensor. You can drive the robot around manually and begin mapping the virtual environment. 
 ```plainttext
 ros2 launch slam_toolbox online_async_launch.py params_file:=./src/echo_sim_v1/config/mapper_params_online_async.yaml use_sim_time:=true
 ```
+#### 5. Launch Nav2
 In one last terminal window, source the terminal and run this command. This will launch Nav2 and allow you to set positinal goals in Rviz and let Nav2 plan a path for the robot autonomously.
 ```plaintext
 ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true
 ```
 
-### Notes:
-For teleop control, ensure your cursor is clicked on the xterm window before you use the keystrokes listed to control the robot.
+## Map vs Virtual Environment
+<table>
+  <tr>
+    <td><img src="assets/Screenshot from 2025-09-02 12-51-06.png" height = "700" width = "540"></td>
+    <td><img src="assets/Screenshot from 2025-09-02 13-07-52.png" height = "700" width = "540"></td>
+  </tr>
+</table>
+
+## Notes:
+- For teleop control, ensure your cursor is clicked on the xterm window before you use the keystrokes listed to control the robot.
+- For mapping with SLAM, wait a few seconds after launching gazebo before launching the slam_toolbox. After you see the map fault go away on the Rviz side pane, you can start moving the robot around to map the environment.
+- For autonomous control, select the "2D Goal Pose" option on the top of the Rviz menu. Then click on a point on the map you generated for the robot to begin its path planning.
+- The simulation uses ```plaintext use_sim_time: true``` to ensure ROS time is synchronized with Gazebo.
+- Ensure the robot frames ```plaintext map --> odom --> base_link``` are broadcasted properly or there may be TF extrapolation errors. Use TF tools to verify this.
+
+## Future Improvements:
+- In the future I want to add a stereo camera as well as IMU sensor for improved perception of the virtual environment.
+- I also want to improve the Nav2 functionality as there are still some small bugs I have encountered when testing.
+
+## References:
+I referenced the youtube series: https://www.youtube.com/playlist?list=PLunhqkrRNRhYAffV8JDiFOatQXuU-NnxT by Articulated Robotics. This resource was extremely helpful.
 

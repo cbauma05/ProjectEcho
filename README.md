@@ -96,8 +96,8 @@ ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true
 - For teleop control, ensure your cursor is clicked on the xterm window before you use the keystrokes listed to control the robot.
 - For mapping with SLAM, wait a few seconds after launching gazebo before launching the slam_toolbox. After you see the map fault go away on the Rviz side pane, you can start moving the robot around to map the environment.
 - For autonomous control, select the "2D Goal Pose" option on the top of the Rviz menu. Then click on a point on the map you generated for the robot to begin its path planning.
-- The simulation uses ```plaintext use_sim_time: true``` to ensure ROS time is synchronized with Gazebo.
-- Ensure the robot frames ```plaintext map --> odom --> base_link``` are broadcasted properly or there may be TF extrapolation errors. Use TF tools to verify this.
+- The simulation uses ```use_sim_time: true``` to ensure ROS time is synchronized with Gazebo.
+- Ensure the robot frames ```map --> odom --> base_link``` are broadcasted properly or there may be TF extrapolation errors. Use TF tools to verify this.
 
 ## Future Improvements:
 - In the future I want to add a stereo camera as well as IMU sensor for improved perception of the virtual environment.

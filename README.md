@@ -1,7 +1,13 @@
-Echo Robot Simulation
+#Project Echo
 
-Echo Robot is a ROS 2-based robotics simulation project featuring a fully 3D-modeled robot integrated with Gazebo and RViz. The robot is equipped with a LiDAR scanner, enabling mapping with SLAM Toolbox and autonomous navigation using Nav2. The project showcases a complete simulation workflow, including teleoperation, SLAM-based mapping, and goal-directed navigation.
+##Overview
+Project Echo is a ROS 2-based robotics simulation project featuring a 3D-modeled robot integrated with Gazebo Classic and RViz for realistic simulation of perception and motion. The robot is equipped with a LiDAR scanner, enabling mapping with SLAM Toolbox and autonomous navigation using the Nav2 stack. This project showcases a complete simulation workflow, including teleoperation via keyboard control, SLAM-based mapping, and goal-directed navigation.
 
+I developed this project to serve as a learning platform for:
+- 3D robot modelling/urdf and xacro development\
+- Structuring effective launch files and ROS folder structure
+- Integration of various ROS - Gazebo plugins for control methods and sensor perception
+- Simulation of sensors for mapping and localization
 
 Example visualization in RViz
 

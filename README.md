@@ -4,15 +4,12 @@
 Project Echo is a ROS 2-based robotics simulation project featuring a 3D-modeled robot integrated with Gazebo Classic and RViz for realistic simulation of perception and motion. The robot is equipped with a LiDAR scanner, enabling mapping with SLAM Toolbox and autonomous navigation using the Nav2 stack. This project showcases a complete simulation workflow, including teleoperation via keyboard control, SLAM-based mapping, and goal-directed navigation.
 
 I developed this project to serve as a learning platform for:
-- 3D robot modelling/urdf and xacro development\
+- 3D robot modelling/urdf and xacro development
 - Structuring effective launch files and ROS folder structure
 - Integration of various ROS - Gazebo plugins for control methods and sensor perception
 - Simulation of sensors for mapping and localization
 
-Example visualization in RViz
-
-Features
-
+## Features
 ✅ 3D robot model visualized in RViz and Gazebo Classic
 
 ✅ LiDAR integration for environmental sensing
@@ -25,17 +22,26 @@ Features
 
 ✅ Configurable launch system for simulation and RViz
 
-Dependencies
+## Dependencies
+- Ubuntu 22.04
+- ROS 2 Humble Hawksbill
+- gazebo_ros
+- xacro
+- Slam ToolBox
+- Nav2 Stack
+- teleop_twist_keyboard
+- xterm
 
-ROS 2 Humble
+## Repository Structure
+echo_sim_v1/
+├── launch/           # Launch files (main, robot spawn)
+├── urdf/             # Robot URDF and XACRO files
+├── worlds/           # Gazebo world files
+├── rviz/             # RViz configuration files
+├── config/           # Navigation, SLAM, and sensor configs
+├── meshes/           # 3D model meshes (STL)
+└── README.md
 
-gazebo_ros
-
-nav2_bringup
-
-slam_toolbox
-
-teleop_twist_keyboard
 
 Make sure you have ROS 2 Humble installed and sourced before running the simulation.
 

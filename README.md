@@ -9,9 +9,14 @@ I developed this project to serve as a learning platform for:
 - Integration of various ROS - Gazebo plugins for control methods and sensor perception
 - Simulation of sensors for mapping and localization
 
-<img src="assets/Screenshot from 2025-08-16 23-43-31.png" height = "700" width = "540">
 
-<img src="assets/Screenshot from 2025-09-02 12-32-51.png" height = "700" width = "540">
+<table>
+  <tr>
+    <td><img src="assets/Screenshot from 2025-08-16 23-43-31.png" height = "700" width = "540"></td>
+    <td><img src="assets/Screenshot from 2025-09-02 12-32-51.png" height = "700" width = "540"></td>
+  </tr>
+</table>
+
 
 ## Features
 ✅ 3D robot model visualized in RViz and Gazebo Classic

@@ -42,6 +42,7 @@ I developed this project to serve as a learning platform for:
 - xterm
 
 ## Repository Structure
+'''
 echo_sim_v1/
 ├── launch/           # Launch files (main, robot spawn, RViz)
 ├── urdf/             # Robot URDF and XACRO files
@@ -50,7 +51,7 @@ echo_sim_v1/
 ├── config/           # Navigation, SLAM, and sensor configs
 ├── meshes/           # 3D model meshes (STL/DAE)
 └── README.md
-
+'''
 
 Make sure you have ROS 2 Humble installed and sourced before running the simulation.
 

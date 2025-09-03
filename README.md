@@ -43,12 +43,12 @@ I developed this project to serve as a learning platform for:
 
 ## Repository Structure
 echo_sim_v1/
-├── launch/           # Launch files (main, robot spawn)
+├── launch/           # Launch files (main, robot spawn, RViz)
 ├── urdf/             # Robot URDF and XACRO files
 ├── worlds/           # Gazebo world files
 ├── rviz/             # RViz configuration files
 ├── config/           # Navigation, SLAM, and sensor configs
-├── meshes/           # 3D model meshes (STL)
+├── meshes/           # 3D model meshes (STL/DAE)
 └── README.md
 
 

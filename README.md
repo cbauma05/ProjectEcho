@@ -56,13 +56,31 @@ echo_sim_v1/
 ```
 ## Getting Started
 #### 1. Clone the Repo
+```plaintext
 git clone <your-repo-url>
 cd echo_sim_v1
+```
 
 #### 2. Build Workspace
+```plaintext
 colcon build
 source install/setup.bash
-
+```
 #### 3. Launch Simulation
 Note: Although there are several launch files in the launch directory (for initial testing purposes), the one that will be used is "gazebo.launch.py" which inherently calls "robot_spawn.launch.py"
+The command below starts gazebo, spawns the robot in the world specified, opens Rviz with the saved config settings for laserscan messages and map saving, and launches teleop control:
+```plaintext
 ros2 launch echo_sim_v1 gazebo.launch.py   world:=/home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1/worlds/obstacles_1.world use_sim_time:=true
+```
+In a new terminal window, source the terminal and run the following command. This will launch the slam_toolbox and enable mapping of the world with the Lidar sensor. You can drive the robot around manually and begin mapping the virtual environment. 
+```plainttext
+ros2 launch slam_toolbox online_async_launch.py params_file:=./src/echo_sim_v1/config/mapper_params_online_async.yaml use_sim_time:=true
+```
+In one last terminal window, source the terminal and run this command. This will launch Nav2 and allow you to set positinal goals in Rviz and let Nav2 plan a path for the robot autonomously.
+```plaintext
+ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true
+```
+
+### Notes:
+For teleop control, ensure your cursor is clicked on the xterm window before you use the keystrokes listed to control the robot.
+

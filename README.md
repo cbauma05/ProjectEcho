@@ -32,6 +32,7 @@ I developed this project to serve as a learning platform for:
 ✅ Configurable launch system for simulation and RViz
 
 ## Dependencies
+Please ensure you have installed the necessary dependancies before getting started.
 - Ubuntu 22.04
 - ROS 2 Humble Hawksbill
 - gazebo_ros
@@ -42,17 +43,26 @@ I developed this project to serve as a learning platform for:
 - xterm
 
 ## Repository Structure
-'''
+The following folders within the "echo_sim_v1" package are essential.
+```plaintext
 echo_sim_v1/
 ├── launch/           # Launch files (main, robot spawn, RViz)
 ├── urdf/             # Robot URDF and XACRO files
 ├── worlds/           # Gazebo world files
 ├── rviz/             # RViz configuration files
 ├── config/           # Navigation, SLAM, and sensor configs
-├── meshes/           # 3D model meshes (STL/DAE)
+├── meshes/           # 3D model meshes (STL)
 └── README.md
-'''
+```
+## Getting Started
+#### 1. Clone the Repo
+git clone <your-repo-url>
+cd echo_sim_v1
 
-Make sure you have ROS 2 Humble installed and sourced before running the simulation.
+#### 2. Build Workspace
+colcon build
+source install/setup.bash
 
-Repository Structure
+#### 3. Launch Simulation
+Note: Although there are several launch files in the launch directory (for initial testing purposes), the one that will be used is "gazebo.launch.py" which inherently calls "robot_spawn.launch.py"
+ros2 launch echo_sim_v1 gazebo.launch.py   world:=/home/cameron/Project_Echo/Educational/amr_ws/src/echo_sim_v1/worlds/obstacles_1.world use_sim_time:=true
